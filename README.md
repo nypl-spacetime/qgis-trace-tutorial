@@ -54,47 +54,7 @@ Keyboard shortcuts:
 - `Spacebar`: pan map tool
 - To finish editing a line, right click anywhere in the map
 
-## Improving existing data
-
-### Setting up
-
-- Pick a map or atlas from https://github.com/nypl-spacetime/nyc-historical-streets
-- Fork and clone this GitHub repository:
-
-```
-git clone https://github.com/<your-github-name>/nyc-historical-streets
-```
-
-- Open the map or atlas's QGIS project (e.g. `1162/trace-1162.qgs`)
-- Zoom to the extent of the street data by right-clicking on the layer in the _Layers Panel_, and clicking _Zoom to Layer_:
-
-![](images/zoom-to-layer.png)
-
-### Tracing
-
-- Make sure snapping is enabled: _Settings ⟶ Snapping Options..._
-
-![](images/snapping.png)
-
-- Start editing the street layer: _Layer ⟶ Toggle Editing_ (or press `E`)
-- Add a new street: _Edit ⟶ Add Feature_ (or press `L`)
-- Add a vertex on each cross street (we need those vertices to later snap vertices from other streets to)
-
-![](images/vertex-snap.gif)
-
-- Finish the street by right clicking on the map, you will be asked to enter the street's name (you can later easily edit the street and add or remove vertices)
-- Enter the street name using the correct letter case, without abbreviations:
-  - _ISSABELLA PL. ⟶ Isabella Place_
-  - _MACDOUGAL STREET ⟶ MacDougal Street_
-  - _WOOLSEY ⟶ Woolsey Street_
-
-![](images/street-name.png)
-
-- To save the edited Shapefile, click _Toggle Editing_ again (or press `E`), and save the changed to the Shapefile
-
-![](images/example.png)
-
-## Starting a new project
+##
 
 This section describes creating a new street trace project in QGIS.
 
@@ -155,4 +115,44 @@ This section describes creating a new street trace project in QGIS.
 
 ### Tracing
 
-See the [_Tracing_ paragraph](https://github.com/nypl-spacetime/qgis-trace-tutorial#tracing) in the _Improving existing data_ section.
+- Make sure snapping is enabled: _Settings ⟶ Snapping Options..._
+
+![](images/snapping.png)
+
+- Start editing the street layer: _Layer ⟶ Toggle Editing_ (or press `E`)
+- Add a new street: _Edit ⟶ Add Feature_ (or press `L`)
+- Add a vertex on each cross street (we need those vertices to later snap vertices from other streets to)
+
+![](images/vertex-snap.gif)
+
+- Finish the street by right clicking on the map, you will be asked to enter the street's name (you can later easily edit the street and add or remove vertices)
+- Enter the street name using the correct letter case, without abbreviations:
+  - _ISABELLA PL. ⟶ Isabella Place_
+  - _MACDOUGAL STREET ⟶ MacDougal Street_
+  - _WOOLSEY ⟶ Woolsey Street_
+
+![](images/street-name.png)
+
+- To save the edited Shapefile, click _Toggle Editing_ again (or press `E`), and save the changed to the Shapefile
+
+![](images/example.png)
+
+## Improving existing data
+
+### Setting up
+
+- Pick a map or atlas from https://github.com/nypl-spacetime/nyc-historical-streets
+- Fork and clone this GitHub repository:
+
+```
+git clone https://github.com/<your-github-name>/nyc-historical-streets
+```
+
+- Open the map or atlas's QGIS project (e.g. `1162/trace-1162.qgs`)
+- Zoom to the extent of the street data by right-clicking on the layer in the _Layers Panel_, and clicking _Zoom to Layer_:
+
+![](images/zoom-to-layer.png)
+
+### Tracing
+
+See the [_Tracing_ paragraph](https://github.com/nypl-spacetime/qgis-trace-tutorial#tracing) in the _Starting a new project_ section.
