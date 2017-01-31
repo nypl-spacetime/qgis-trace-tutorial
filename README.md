@@ -5,7 +5,7 @@ New York's streets have changed a lot over time: new street grids were projected
 Some examples:
 
 - [1857 map of the Lower East Side, overlayed over OpenStreetMap](http://maps.nypl.org/warper/maps/7135#Preview_tab)
-- [Talman Street in Brooklyn](http://maps.nypl.org/warper/maps/19260#Preview_tab), gone after the construction of the Brooklyn-Queens Expressway (there is [no more Talman Street](https://www.openstreetmap.org/search?query=talman%20street%2C%20brooklyn#map=17/41.52250/-72.07183) in New York City)
+- [Talman Street in Brooklyn](http://maps.nypl.org/warper/maps/19260#Preview_tab), gone after the construction of the Brooklyn-Queens Expressway (today, there is [no more Talman Street](https://www.openstreetmap.org/search?query=talman%20street%2C%20brooklyn#map=17/41.52250/-72.07183) in New York City)
 
 [![](images/talman-street.jpg)](https://digitalcollections.nypl.org/items/510d47d9-4f8c-a3d9-e040-e00a18064a99)
 
@@ -18,3 +18,84 @@ __We need your help! See below how you can help us tracing streets from historic
 First, download [QGIS](http://www.qgis.org/en/site/forusers/download.html), and install the application by following their instructions. If all goes well, start QGIS, it should look a little like this:
 
 ![](images/qgis.png)
+
+### Keyboard shortcuts
+
+By default, QGIS does not have convenient keyboard shortcuts for creating and editing polygonal lines. This repository contains a QGIS shortcut definitions file: [`qgis-shortcuts.xml`](qgis-shortcuts.xml). Download this file, choose _Settings ⟶ Configure Shortcuts..._, and select this file.
+
+![](images/configure-shortcuts.png)
+
+Keyboard shortcuts:
+
+- `E`: toggle editing mode on/off for the selected layer (prompts for save when toggling off)
+- `L`: draw a line (line type layer, editing mode on, right-click to stop drawing)
+- `N`: move a line node (connected nodes will move together)
+- `M`: move an entire line (connected nodes **do not** move together)
+- `I`: identify a line (opens a window with a form to edit line data)
+- `S`: select a line
+- `D`: delete selected line (identify does not select)
+- `Z`: zoom tool
+- `Delete` (`Fn+Delete` on Mac) deletes selected points
+- `Spacebar`: pan map tool
+- To finish editing a line, right click anywhere in the map
+
+## Using an existing project
+
+## Starting a new project
+
+http://maps.nypl.org/warper/layers/1162
+
+This section describes
+
+- Create a new QGIS project
+- Add the historical map as base layer:
+  - Select _Layer ⟶ Add Layer ⟶ Add WMS/WMTS Layer..._
+  - Copy the _WMS Capabilties URL_ from Map Warper's [Export tab](http://maps.nypl.org/warper/layers/1162#Export_tab)
+  - In the _Add Layer_ dialog, click _New_, choose a name and paste the WMS URL
+
+![](images/add-layer.png)
+
+  - Click _Connect_, select the correct layer, and set the tile size to 255x256 PNG.
+  - Click _Add_, and then _Close_
+
+![](images/add-layer-2.png)
+
+  - To view the layer you just added, do the following:
+    - Set scale to _1:10,000_
+    - Find a coordinate that should be somewhere on the map, for example using [bertspaan.nl/latlong](http://bertspaan.nl/latlong/#14/40.7619/-73.9249)
+    - Enter this coordinate: _-73.93001, 40.75101_ (first longitude, then latitude)
+
+![](images/coordinate-scale.png)
+
+- Now, add create a new Shapefile Layer:
+  - Select _Layer ⟶ Create Layer ⟶ New Shapefile Layer..._
+  - Type should be _Line_
+  - Remove the `id` column, and add a field of type _Text data_ with the name `name`. This field will contain the street name.
+
+![](images/new-shapefile.png)
+
+  - Afterwards, QGIS will ask to save the Shapefile on disk.
+  - Pick a place, choose a name - for example `<layerId>/<layerId>.shp` (in this case, `1162/1162.shp`)
+
+![](images/save-shapefile.png)
+
+- Set snapping options: _Settings ⟶ Snapping Options..._
+
+![](images/snapping.png)
+
+- Right click the new Shapefile layer to go to the _Layer Properties_ window
+- Set the line width and color of the layer
+
+![](images/line-width.png)
+
+- Enable labels, and choose the `name` field
+
+![](images/labels.png)
+
+- Change label placement
+
+![](images/placement.png)
+
+- Add a buffer around the labels for better visibility
+
+![](images/text-buffer.png)
