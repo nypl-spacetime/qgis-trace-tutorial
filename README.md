@@ -78,7 +78,7 @@ Keyboard shortcuts:
 - Add a new street: _Edit ⟶ Add Feature_ (or press `L`)
 - Add a vertex on each cross street (we need those vertices to later snap vertices from other streets to)
 
-![](vertex-snap.gif)
+![](images/vertex-snap.gif)
 
 - Finish the street by right clicking on the map, you will be asked to enter the street's name (you can later easily edit the street and add or remove vertices)
 - Enter the street name using the correct letter case, without abbreviations:
@@ -86,17 +86,11 @@ Keyboard shortcuts:
   - _MACDOUGAL STREET ⟶ MacDougal Street_
   - _WOOLSEY ⟶ Woolsey Street_
 
-![](street-name.png)
+![](images/street-name.png)
 
+- To save the edited Shapefile, click _Toggle Editing_ again (or press `E`), and save the changed to the Shapefile
 
-example.png
-
-
-
-
-
-
-
+![](images/example.png)
 
 ## Starting a new project
 
