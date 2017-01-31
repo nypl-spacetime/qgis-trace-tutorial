@@ -70,6 +70,34 @@ Keyboard shortcuts:
 
 ### Tracing
 
+- Make sure snapping is enabled: _Settings ⟶ Snapping Options..._
+
+![](images/snapping.png)
+
+- Start editing the street layer: _Layer ⟶ Toggle Editing_ (or press `E`)
+- Add a new street: _Edit ⟶ Add Feature_ (or press `L`)
+- Add a vertex on each cross street (we need those vertices to later snap vertices from other streets to)
+
+![](vertex-snap.gif)
+
+- Finish the street by right clicking on the map, you will be asked to enter the street's name (you can later easily edit the street and add or remove vertices)
+- Enter the street name using the correct letter case, without abbreviations:
+  - _ISSABELLA PL. ⟶ Isabella Place_
+  - _MACDOUGAL STREET ⟶ MacDougal Street_
+  - _WOOLSEY ⟶ Woolsey Street_
+
+![](street-name.png)
+
+
+example.png
+
+
+
+
+
+
+
+
 ## Starting a new project
 
 This section describes creating a new street trace project in QGIS.
@@ -131,4 +159,4 @@ This section describes creating a new street trace project in QGIS.
 
 ### Tracing
 
-See the _Tracing_ paragraph in the _Improving existing data_ section.
+See the [_Tracing_ paragraph](https://github.com/nypl-spacetime/qgis-trace-tutorial#tracing) in the _Improving existing data_ section.

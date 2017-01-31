@@ -1,2 +1,11 @@
 <!DOCTYPE shortcuts>
-<qgsshortcuts version="1.0" locale="en_US"/>
+<qgsshortcuts version="1.0" locale="en_US">
+    <act shortcut="L" name="Add Feature"/>
+    <act shortcut="I" name="Identify Features"/>
+    <act shortcut="M" name="Move Feature(s)"/>
+    <act shortcut="N" name="Node Tool"/>
+    <act shortcut="Space" name="Pan Map"/>
+    <act shortcut="E" name="Toggle Editing"/>
+    <act shortcut="Z" name="Zoom In"/>
+    <act shortcut="Alt+Z" name="Zoom Out"/>
+</qgsshortcuts>
