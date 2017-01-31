@@ -61,7 +61,9 @@ Keyboard shortcuts:
 - Pick a map or atlas from https://github.com/nypl-spacetime/nyc-historical-streets
 - Fork and clone this GitHub repository:
 
-    git clone https://github.com/<your-github-name>/nyc-historical-streets
+```
+git clone https://github.com/<your-github-name>/nyc-historical-streets
+```
 
 - Open the map or atlas's QGIS project (e.g. `1162/trace-1162.qgs`)
 - Zoom to the extent of the street data by right-clicking on the layer in the _Layers Panel_, and clicking _Zoom to Layer_:
