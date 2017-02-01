@@ -26,7 +26,7 @@ How to contribute:
 
 __To keep track of who is doing what, please send an email to bertspaan@nypl.org before you start (or open an issue in the original GitHub repository.__
 
-For more information about contributing to the NYC Space/Time Directory, see http://spacetime.nypl.org/#contributing.
+For more information about contributing to the NYC Space/Time Directory, see http://spacetime.nypl.org/#contributing (__coming soon!__).
 
 ## Getting Ready
 
