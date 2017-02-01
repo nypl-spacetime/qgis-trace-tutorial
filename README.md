@@ -68,7 +68,7 @@ This section describes creating a new street trace project in QGIS.
 
 ![](images/add-layer.png)
 
-  - Click _Connect_, select the correct layer, and set the tile size to 255x256 PNG.
+  - Click _Connect_, select the correct layer, and set the tile size to __255x256 PNG__.
   - Click _Add_, and then _Close_
 
 ![](images/add-layer-2.png)
