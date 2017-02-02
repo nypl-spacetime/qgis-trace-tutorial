@@ -82,6 +82,7 @@ This section describes creating a new street trace project in QGIS.
     - Set scale to _1:50,000_
     - Find a coordinate that should be somewhere on the map, for example using [bertspaan.nl/latlong](http://bertspaan.nl/latlong/#14/40.7619/-73.9249) (make sure to _reverse_ the coordinates, __first longitude, then latitude__)
     - Enter this coordinate, for example: _-73.93001, 40.75101_ (somewhere in Queens)
+    - Ignore <span style="color: red;">Error downloading</span> errors, this just means that Map Warper does not have map data outside of the map's region
 
 ![](images/coordinate-scale.png)
 
