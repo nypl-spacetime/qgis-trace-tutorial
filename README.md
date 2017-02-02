@@ -61,6 +61,10 @@ This section describes creating a new street trace project in QGIS.
 ### Setting up
 
 - Create a new QGIS project
+- Make sure to set your project's coordinate system to _WGS 84 - EPSG:4326_ by clicking _Project ⟶ Project Properties... ⟶ CRS_ (or by clicking the projection in the status bar):
+
+![](images/epsg4326.png)
+
 - Add the historical map as base layer:
   - Select _Layer ⟶ Add Layer ⟶ Add WMS/WMTS Layer..._
   - Copy the _WMS Capabilties URL_ from Map Warper's [Export tab](http://maps.nypl.org/warper/layers/1162#Export_tab)
@@ -74,9 +78,10 @@ This section describes creating a new street trace project in QGIS.
 ![](images/add-layer-2.png)
 
   - To view the layer you just added, do the following:
-    - Set scale to _1:10,000_
-    - Find a coordinate that should be somewhere on the map, for example using [bertspaan.nl/latlong](http://bertspaan.nl/latlong/#14/40.7619/-73.9249)
-    - Enter this coordinate: _-73.93001, 40.75101_ (first longitude, then latitude)
+    - (You cannot use _Zoom to Layer_, Map Warper WMS layers do not specify their bounding box)
+    - Set scale to _1:50,000_
+    - Find a coordinate that should be somewhere on the map, for example using [bertspaan.nl/latlong](http://bertspaan.nl/latlong/#14/40.7619/-73.9249) (make sure to _reverse_ the coordinates, __first longitude, then latitude__)
+    - Enter this coordinate, for example: _-73.93001, 40.75101_ (somewhere in Queens)
 
 ![](images/coordinate-scale.png)
 
