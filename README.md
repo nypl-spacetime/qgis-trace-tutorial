@@ -36,7 +36,7 @@ First, download [QGIS](http://www.qgis.org/en/site/forusers/download.html), and 
 
 ### Keyboard shortcuts
 
-By default, QGIS does not have very convenient keyboard shortcuts for creating and editing polygonal lines. This repository contains a QGIS shortcut definitions file: [`qgis-shortcuts.xml`](qgis-shortcuts.xml). Download this file, choose _Settings ⟶ Configure Shortcuts..._, click _Load..._ and select the shortcut XML file.
+By default, QGIS does not have very convenient keyboard shortcuts for creating and editing polygonal lines. This repository contains a QGIS shortcut definitions file: [`qgis-shortcuts.xml`](https://raw.githubusercontent.com/nypl-spacetime/qgis-trace-tutorial/master/qgis-shortcuts.xml). Download this file, choose _Settings ⟶ Configure Shortcuts..._, click _Load..._ and select the shortcut XML file.
 
 ![](images/configure-shortcuts.png)
 
